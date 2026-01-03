@@ -110,6 +110,26 @@ body {
     color: rgba(255, 255, 255, 0.6);
 }
 
+/* Header */
+.main-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 24px;
+    z-index: 1000;
+    background: rgba(5, 5, 16, 0.8);
+    backdrop-filter: blur(10px);
+}
+
+.header-spacer {
+    flex: 1;
+}
+
 @media (max-width: 768px) {
     .site-name {
         font-size: 3rem;
@@ -117,5 +137,9 @@ body {
 
     .links {
         flex-direction: column;
+    }
+
+    .main-header {
+        padding: 0 16px;
     }
 }

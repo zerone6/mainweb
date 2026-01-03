@@ -5,16 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><%= siteName %></title>
     <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/widgets/profile-widget.css">
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="background-animation" id="canvas-container"></div>
-    
+
+    <header class="main-header">
+        <div class="header-spacer"></div>
+        <profile-widget auth-api-url="<%= authApiUrl %>"></profile-widget>
+    </header>
+
     <div class="content-wrapper">
-        <header>
+        <div class="hero-section">
             <div class="greeting">Welcome to</div>
             <h1 class="site-name"><%= siteName %></h1>
-        </header>
+        </div>
 
         <nav class="links">
             <a href="<%= appUrl %>" class="card">
@@ -29,5 +35,6 @@
     </div>
 
     <script src="/script.js"></script>
+    <script src="/widgets/profile-widget.umd.js"></script>
 </body>
 </html>
