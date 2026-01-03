@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= siteName %></title>
+    <link rel="stylesheet" href="/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="background-animation" id="canvas-container"></div>
+    
+    <div class="content-wrapper">
+        <header>
+            <div class="greeting">Welcome to</div>
+            <h1 class="site-name"><%= siteName %></h1>
+        </header>
+
+        <nav class="links">
+            <a href="<%= appUrl %>" class="card">
+                <span class="card-title">APP</span>
+                <span class="card-desc">Enter Application</span>
+            </a>
+            <a href="<%= cloudUrl %>" class="card">
+                <span class="card-title">CLOUD</span>
+                <span class="card-desc">Access Cloud Storage</span>
+            </a>
+        </nav>
+    </div>
+
+    <script src="/script.js"></script>
+</body>
+</html>

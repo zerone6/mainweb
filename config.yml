@@ -1,0 +1,10 @@
+ingress:
+  - hostname: hstarsp.net
+    service: http://127.0.0.1:80
+  - hostname: www.hstarsp.net
+    service: http://127.0.0.1:80
+  - hostname: app.hstarsp.net
+    service: http://127.0.0.1:3000
+  - hostname: cloud.hstarsp.net
+    service: http://127.0.0.1:3001
+  - service: http_status:404
