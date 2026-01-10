@@ -26,8 +26,9 @@ app.use('/widgets', express.static(
 app.get('/', (req, res) => {
   res.render('index', {
     siteName: 'hstarsp.net',
-    appUrl: 'https://app.hstarsp.net',
-    cloudUrl: 'https://cloud.hstarsp.net',
+    appUrl: process.env.APP_URL || 'https://app.hstarsp.net',
+    cloudUrl: process.env.CLOUD_URL || 'https://cloud.hstarsp.net',
+    estateUrl: process.env.ESTATE_URL || 'https://estate.hstarsp.net',
     authApiUrl: ''  // Use same origin (proxied)
   });
 });
