@@ -29,6 +29,7 @@ app.get('/', (req, res) => {
     appUrl: process.env.APP_URL || 'https://app.hstarsp.net',
     cloudUrl: process.env.CLOUD_URL || 'https://cloud.hstarsp.net',
     estateUrl: process.env.ESTATE_URL || 'https://estate.hstarsp.net',
+    aiUrl: process.env.AI_URL || 'https://ai.hstarsp.net',
     authApiUrl: ''  // Use same origin (proxied)
   });
 });
