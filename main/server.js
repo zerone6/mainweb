@@ -27,7 +27,7 @@ app.get('/', (req, res) => {
   res.render('index', {
     siteName: 'hstarsp.net',
     appUrl: process.env.APP_URL || 'https://app.hstarsp.net',
-    cloudUrl: process.env.CLOUD_URL || 'https://cloud.hstarsp.net',
+    photosUrl: process.env.PHOTOS_URL || 'http://photos.hstarsp.net',
     estateUrl: process.env.ESTATE_URL || 'https://estate.hstarsp.net',
     aiUrl: process.env.AI_URL || 'https://ai.hstarsp.net',
     authApiUrl: ''  // Use same origin (proxied)
