@@ -26,7 +26,7 @@ app.use('/widgets', express.static(
 app.get('/', (req, res) => {
   res.render('index', {
     siteName: 'hstarsp.net',
-    appUrl: process.env.APP_URL || 'https://app.hstarsp.net',
+    gameUrl: 'https://app.hstarsp.net',
     photosUrl: process.env.PHOTOS_URL || 'http://photos.hstarsp.net',
     estateUrl: process.env.ESTATE_URL || 'https://estate.hstarsp.net',
     aiUrl: process.env.AI_URL || 'https://ai.hstarsp.net',
