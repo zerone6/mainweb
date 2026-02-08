@@ -39,8 +39,8 @@ app.get('/', (req, res) => {
         <div class="container">
             <h1>App Service</h1>
             <p>Welcome to the Application Subdomain.</p>
-            <p>URL: https://app.hstarsp.net</p>
-            <a href="https://hstarsp.net">← Back to Main</a>
+            <p>URL: ${process.env.SELF_URL || 'https://app.hstarsp.net'}</p>
+            <a href="${process.env.MAIN_URL || 'https://hstarsp.net'}">← Back to Main</a>
         </div>
     </body>
     </html>
